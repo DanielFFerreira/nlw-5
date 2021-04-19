@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text } from 'react-native'
+import { View, Text, Image } from 'react-native';
+import wateringImg from '../assets/watering.png';
 
 
 export function Welcome() {
@@ -10,6 +11,8 @@ export function Welcome() {
         suas plantas de
         forma fácil
      </Text>
+
+      <Image source={wateringImg} />
     </View>
   )
 }
