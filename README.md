@@ -34,5 +34,4 @@ dia 1
 
 dia 2
 - criação da tela inicial (screen) para pré-carregamento
-- componente button e utilização de SASS
 - criação de páginas e navegação entre rotas
