@@ -2,6 +2,7 @@ import React from 'react';
 import {
   View,
   Text,
+  Image,
   StyleSheet
 } from 'react-native';
 
@@ -17,7 +18,12 @@ export function Header() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'orange',
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 20,
+    backgroundColor: colors.red,
   }
 });
 
