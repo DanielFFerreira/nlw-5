@@ -5,13 +5,21 @@ import {
   Image,
   StyleSheet
 } from 'react-native';
+import { getStatusBarHeight } from 'react-native-iphone-x-helper';
 
+import userImg from '../assets/daniel.png';
 import colors from '../styles/colors';
+import fonts from '../styles/fonts';
 
 export function Header() {
   return (
     <View style={styles.container}>
-      <Text>Selecionar planta</Text>
+      <View>
+        <Text style={styles.greeting}>Olá,</Text>
+        <Text style={styles.userName}>Daniel</Text>
+      </View>
+
+      <Image source={userImg} />
     </View>
   )
 }
@@ -22,8 +30,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 20,
-    backgroundColor: colors.red,
+    paddingVertical: 20,
+    marginTop: getStatusBarHeight(),
   }
 });
 
