@@ -19,7 +19,7 @@ export function Header() {
         <Text style={styles.userName}>Daniel</Text>
       </View>
 
-      <Image source={userImg} />
+      <Image source={userImg} style={styles.image} />
     </View>
   )
 }
@@ -32,6 +32,22 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 20,
     marginTop: getStatusBarHeight(),
+  },
+  image: {
+    width: 70,
+    height: 70,
+    borderRadius: 50,
+  },
+  greeting: {
+    fontSize: 32,
+    color: colors.heading,
+    fontFamily: fonts.text
+  },
+  userName: {
+    fontSize: 32,
+    fontFamily: fonts.heading,
+    color: colors.heading,
+    lineHeight: 40
   }
 });
 
